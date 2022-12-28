@@ -1,0 +1,41 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'results.js') }}"></script>
+<script>
+    let firstEntry = {{entry|tojson}}
+</script>
+
+
+    <div class="container-fluid">
+        <div class="row resultsRow">
+            <div class="col-md-5 resultsFirstCol">
+                <div class="typeOfMetaphorsDiv">
+                    What <u>type</u> of metaphors are you more interested in?
+                    <p>(E.g. funny, extended, nerdy, etc.)
+                </div>
+                <br>
+                <div class="inputWrapper">
+                    <input type="text" class="secondQuestionInputBox"> </input> <button id="generateMoreButton">Generate more</button>
+                </div>
+            </div>
+            <div class="col-md-7 resultsCol">
+                <div class="resultsDiv">Here are five metaphors about <b>{{entry}}</b>:</div>
+                <br>
+                <div class="loadingDiv"><img id="loadingLogo" src="/static/simile.gif">
+                    <br>
+                    Loading
+                </div>
+                <div class="displayResults"></div>
+                <br>
+                <button id="reload">Refresh answer</button>
+            </div>
+        </div>
+    </div>
+    
+        
+
+
+{% endblock %}

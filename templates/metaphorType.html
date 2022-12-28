@@ -1,0 +1,41 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'metaphorType.js') }}"></script>
+<script>
+    let secondEntry = {{secondentry|tojson}}
+    let firstEntry = {{newEntryI|tojson}}
+</script>
+
+
+    <div class="container-fluid">
+        <div class="row resultsRow">
+            <div class="col-md-5 resultsFirstCol">
+                <div class="relationshipDiv">
+                    Enter another topic to understand its relevance to {{newEntryI}}.
+                </div>
+                <br>
+                <div class="inputWrapper">
+                    <input type="text" class="thirdQuestionInputBox"> </input><button id="getRelationshipButton">add a topic</button>
+                </div>
+            </div>
+            <div class="col-md-7 resultsCol">
+                <div class="resultsDiv">Here is a <b>{{secondentry}}</b> metaphor about <b>{{newEntryI}}</b>:</div>
+                <br>
+                <div class="loadingDiv"><img id="loadingLogo" src="/static/simile.gif">
+                    <br>
+                    Loading
+                </div>
+                <div class="displayResults"></div>
+                <br>
+                <button id="reload">Refresh answer</button>
+            </div>
+        </div>
+    </div>
+    
+        
+
+
+{% endblock %}

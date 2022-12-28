@@ -1,0 +1,25 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'index.js') }}"></script>
+
+
+
+    <div class="container-fluid">
+        <!-- <p></p> -->
+        <div class="row mainRow">
+            <div class="col-md-6 homePageFirstColumn"><img id="simile-logo" src="/static/simile.gif"><img id="simileHomePagePic"src="/static/simile3rd.png"></div>
+            <div class="col-md-6 iterDiv1">
+                <div class="firstQuestion">What <b>STEM</b> topic would you like to <br>learn through metaphors?</div>
+                <br>
+                <input type="text" class="firstQuestionInputBox"> </input><button id="findOutButton">Find out</button>
+            </div>
+        </div>
+    </div>
+    
+        
+
+
+{% endblock %}

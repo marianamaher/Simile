@@ -1,0 +1,40 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'finalChoice.js') }}"></script>
+<script>
+    let fourthEntry = {{fourthEntry|tojson}}
+    let topic = {{newEntryIII|tojson}}
+</script>
+
+
+    <div class="container-fluid">
+        <p></p>
+            <div class="choiceWrapperDiv">
+                <div class="finalResultDiv">
+                    Result:
+                </div>
+                <br>
+                <div class="loadingDiv"><img id="loadingLogo" src="/static/simile.gif">
+                    <br>
+                    Loading
+                </div>
+                <div class="displayResults"></div>
+          
+                
+            <!-- </div> -->
+                <div class="gobackToHomePageDiv">
+                    <br>
+                    <button id="reload">Refresh answer</button>
+                    <button id="backToHomeButton">Home: start again</button>
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+    
+        
+
+
+{% endblock %}

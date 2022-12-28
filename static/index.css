@@ -1,0 +1,154 @@
+/* layout features*/
+body {
+    background-image: url("/static/wallpaper.jpg");
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+.mainRow{
+    text-align: center;
+    /* margin-top: 40px; */
+  }
+  
+#simile-logo{
+    height: 30%;
+}
+
+/* homepage features */
+.firstQuestion{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.homePageFirstColumn{
+    margin-top: 205px;
+}
+#simileHomePagePic{
+    width: 65%;
+}
+.iterDiv1{
+    /* margin-top: 205px; */
+    padding-right: 30px;
+    padding-top: 205px;
+    background-image: url("/static/whitepaper.jpg");
+}
+/* first metaphors results */
+.resultsRow{
+    text-align: center;
+    /* margin-top: 75px; */
+}
+.resultsDiv{
+    text-align: center;
+    font-size: 25px;
+}
+
+.listingResults{
+    white-space: pre-line
+}
+
+.resultsFirstCol{
+    /* visibility: hidden; */
+    /* display: none; */
+    margin-top: 8%;
+    font-family: 'Poppins',sans-serif;
+}
+
+/* type of metaphors features */
+
+#typePic{
+    height: 20px;
+
+}
+.typeOfMetaphorsDiv{
+     font-family: 'Poppins',sans-serif;
+     font-size: 16px;
+     display: none;
+}
+.inputWrapper{
+    display: none;
+}
+
+/* relationship features */
+.relationshipDiv{
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    display: none;
+}
+/* choices features */
+.choicesDiv{
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    display: none;
+}
+
+.finalResultDiv{
+    font-family: 'Poppins',sans-serif;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+ 
+.gobackToHomePageDiv{
+    margin-left: 20px;
+    text-align: center;
+}
+.displayResults{
+    margin-left: 20px;
+    white-space: pre-line;
+    text-align: left;
+    line-break: auto;
+    font-size: 20px;
+}
+
+#backToHomeButton{
+    border-radius: 5px;
+    background-image: linear-gradient(to right, rgb(255, 146, 63) , rgb(249, 192, 108));
+    color: rgb(248, 247, 247);
+    height: 40px;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+#backToHomeButton:hover{
+    color: black;
+    cursor: pointer;
+}
+
+#reload{
+    cursor: pointer;
+}
+
+#goBackButton{
+    width: 50px;
+    height: 40px;
+    font-size: 23px;
+}
+
+.choiceWrapperDiv{
+    background-image: url("/static/whitepaper.jpg");
+    margin-top: 90px;
+    width: 90%;
+    padding-bottom: 35px;
+   margin-left: 5%;
+}
+
+/* Loading logo */
+#loadingLogo{
+    width: 80px;
+}
+.loadingDiv{
+    color: rgb(255, 84, 31);
+    font-size: 15px;
+    text-align: center;
+}
+
+.resultsCol{
+    padding-top: 100px;
+    height:100vh;
+    background-image: url("/static/whitepaper.jpg");
+}
+
+/* Buttons */
+#generateMoreButton{
+    font-family: 'Poppins',sans-serif;
+    font-size: 13px;
+}

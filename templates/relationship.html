@@ -1,0 +1,45 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'relationship.js') }}"></script>
+<script>
+    let mainTopic = {{newEntryII|tojson}}
+    let newTopic = {{thirdentry|tojson}}
+</script>
+
+
+    <div class="container-fluid">
+        <div class="row resultsRow">
+            <div class="col-md-5 resultsFirstCol">
+                <div class="choicesDiv">
+                    <b>Type:</b>
+                    <br>
+                    (<b>A</b>) for an explanation of how the topic affects you <br>
+                    (<b>B</b>) for a full scientific explanation of the topic<br>
+                    (<b>C</b>) for an explanation of how and why the topic is created. <br>
+                </div>
+                <br>
+                <div class="inputWrapper">
+                    <input type="text" class="fourthQuestionInputBox"> </input><button id="choiceButton">pick</button>
+                </div>
+            </div>
+            <div class="col-md-7 resultsCol">
+                <div class="resultsDiv">Here is the relation between <b>{{newEntryII}}</b> and <b>{{thirdentry}}</b>:</div>
+                <br>
+                <div class="loadingDiv"><img id="loadingLogo" src="/static/simile.gif">
+                    <br>
+                    Loading
+                </div>
+                <div class="displayResults"></div>
+                <br>
+                <button id="reload">Refresh answer</button>
+            </div>
+        </div>
+    </div>
+    
+        
+
+
+{% endblock %}
