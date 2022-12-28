@@ -9,7 +9,6 @@ import openai
 import textwrap as tw
 import re
 from pprint import pprint
-openai.api_key = "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"
 
 app = Flask(__name__)
 
